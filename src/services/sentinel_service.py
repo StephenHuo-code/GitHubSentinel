@@ -1,21 +1,38 @@
 # src/services/sentinel_service.py
 
 class GitHubSentinelService:
+    '''
     def __init__(self, updater, notifier, reporter, github_agent):
         self.updater = updater
         self.notifier = notifier
         self.reporter = reporter
         self.github_agent = github_agent
+    '''
+
+
+    def __init__(self, updater, notifier, reporter, github_agent, subscription_manager):
+        self.updater = updater
+        self.notifier = notifier
+        self.reporter = reporter
+        self.github_agent = github_agent
+        self.subscription_manager = subscription_manager
 
     def run(self):
-        updates = self.updater.fetch_updates()
-        report = self.reporter.generate_report(updates)
-        self.notifier.notify(report)
+        try:
+            updates = self.updater.fetch_updates()
+            self.notifier.notify(updates)
+            self.reporter.report(updates)
+        except Exception as e:
+            print(f"Error in run method: {e}")
 
     def report_latest_release(self, repo_name):
-        release_info = self.github_agent.get_latest_release(repo_name)
-        report = self._generate_release_report(release_info)
-        self.notifier.notify(report)
+        try:
+            release_info = self.github_agent.get_latest_release(repo_name)
+            report = self._generate_release_report(release_info)
+            self.notifier.notify(report)
+        except Exception as e:
+            print(f"Error in report_latest_release method: {e}")
+
 
     def _generate_release_report(self, release_info):
         report = (
@@ -26,3 +43,8 @@ class GitHubSentinelService:
             f"Release Notes:\n{release_info['body']}"
         )
         return report
+
+
+        # services/sentinel_service.py
+
+
