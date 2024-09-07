@@ -8,6 +8,7 @@ from core.subscription import SubscriptionManager
 from core.updater import Updater
 from core.notifier import Notifier
 from core.reporter import Reporter
+from core.llm import LLM
 from services.sentinel_service import GitHubSentinelService
 from core.config import Config
 
@@ -19,7 +20,6 @@ def scheduler(sentinel_service):
             print(f"调度器遇到错误: {e}")
         finally:
             time.sleep(3600)  # 每小时运行一次
-
 
 class GitHubSentinelCLI(cmd.Cmd):
     intro = '欢迎使用 GitHub Sentinel 工具。输入 help 或 ? 查看命令列表。\n'
@@ -69,6 +69,21 @@ class GitHubSentinelCLI(cmd.Cmd):
         print('感谢使用 GitHub Sentinel 工具。再见！')
         return True
 
+    def do_export_progress(self, repo_name):
+        '导出每日进展: export_progress octocat/Hello-World'
+        filename = self.sentinel_service.github_agent.export_daily_progress(repo_name)
+        print(f"每日进展已导出到 {filename}")
+
+    def do_generate_report(self, repo_name):
+        '生成正式报告: generate_report octocat/Hello-World'
+        if not repo_name:
+            print("请提供仓库名称，例如：generate_report octocat/Hello-World")
+            return
+        print(f"Generating report for repo: {repo_name}")  # 调试打印
+        filename = self.sentinel_service.github_agent.export_daily_progress(repo_name)
+        report_filename = self.sentinel_service.reporter.generate_daily_report(filename)
+        print(f"正式报告已生成到 {report_filename}")
+
 def main():
     config = Config()
     
@@ -76,7 +91,8 @@ def main():
     github_agent = GitHubAgent(config.github_token)
     subscription_manager = SubscriptionManager()
     notifier = Notifier(config.notification_method)
-    reporter = Reporter()
+    llm = LLM(config.openai_api_key)
+    reporter = Reporter(llm)
     
     updater = Updater(github_agent, subscription_manager)
     sentinel_service = GitHubSentinelService(updater, notifier, reporter, github_agent, subscription_manager)
@@ -93,35 +109,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-'''
-
-from agents.github_agent import GitHubAgent
-from core.subscription import SubscriptionManager
-from core.updater import Updater
-from core.notifier import Notifier
-from core.reporter import Reporter
-from services.sentinel_service import GitHubSentinelService
-from core.config import Config
-
-def main():
-    config = Config()
-    
-    # 初始化 GitHubAgent 时使用配置类中的 token
-    github_agent = GitHubAgent(config.github_token)
-    subscription_manager = SubscriptionManager()
-    notifier = Notifier(config.notification_method)
-    reporter = Reporter()
-    
-    updater = Updater(github_agent, subscription_manager)
-    sentinel_service = GitHubSentinelService(updater, notifier, reporter, github_agent)
-    
-    # Example: Add a subscription and run the service
-    subscription_manager.add_subscription("octocat/Hello-World")
-    sentinel_service.run()
-    
-    # Get the latest release of LangChain repository
-    sentinel_service.report_latest_release("langchain-ai/langchain")
-
-if __name__ == "__main__":
-    main()
-'''
