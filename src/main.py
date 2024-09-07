@@ -16,12 +16,14 @@ def scheduler(sentinel_service):
         try:
             sentinel_service.run()
         except Exception as e:
-            print(f"Scheduler encountered an error: {e}")
-        time.sleep(3600)  # 每小时运行一次
+            print(f"调度器遇到错误: {e}")
+        finally:
+            time.sleep(3600)  # 每小时运行一次
+
 
 class GitHubSentinelCLI(cmd.Cmd):
     intro = '欢迎使用 GitHub Sentinel 工具。输入 help 或 ? 查看命令列表。\n'
-    prompt = '(GitHub Sentinel) '
+    prompt = '(GitHub Sentinel) '  
 
     def __init__(self, sentinel_service, scheduler_thread):
         super().__init__()
