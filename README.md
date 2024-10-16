@@ -47,10 +47,6 @@ GitHub Sentinel is a tool for monitoring updates to GitHub repositories. It can 
 在运行工具之前，请确保设置环境变量 `GITHUB_API_KEY` 和 `NOTIFICATION_METHOD`。例如：  
 Before running the tool, make sure to set the environment variables `GITHUB_API_KEY` and `NOTIFICATION_METHOD`. For example:
 
-## Command Line Features / 命令行功能
-
-- **new_command**: Description of what the new command does.  
-  **new_command**: 新命令的描述。
 
 ## 如何运行 / How to Run
 
@@ -59,7 +55,7 @@ Before running the tool, make sure to set the environment variables `GITHUB_API_
 - **命令行**：在终端中运行以下命令：  
   **Command Line**: Run the following command in your terminal:  
   ```sh
-  python main.py
+  python  src/command_tool.py
   ```
 
 - **其他方法**：根据您的需求选择其他运行方式。
