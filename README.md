@@ -1,30 +1,35 @@
 # GitHub Sentinel
 
-GitHub Sentinel 是一个用于监控 GitHub 仓库更新的工具。它可以订阅仓库，定期检查更新，并通知用户最新的发布信息。
+[English Version](https://github.com/StephenHuo-code/GitHubSentinel/blob/main/README-en.md)
 
-# GitHub Sentinel
+GitHub Sentinel 是一个用于监控 GitHub 仓库更新的工具。它可以订阅仓库，定期检查更新，并通知用户最新的发布信息。  
 
-GitHub Sentinel is a tool for monitoring updates to GitHub repositories. It can subscribe to repositories, check for updates regularly, and notify users of the latest release information.
 
 ## 功能 / Features
 
 - **订阅仓库**：添加你感兴趣的 GitHub 仓库到订阅列表。  
-  **Subscribe to Repositories**: Add GitHub repositories you are interested in to the subscription list.
-  
+  **Subscribe to Repositories**: Add GitHub repositories you are interested in to the subscription list.  
+  [English Version](https://github.com/yourusername/GitHubSentinel/blob/main/README.md)
+
 - **定期检查更新**：自动定期检查订阅仓库的更新。  
-  **Regularly Check for Updates**: Automatically check for updates to subscribed repositories at regular intervals.
-  
+  **Regularly Check for Updates**: Automatically check for updates to subscribed repositories at regular intervals.  
+  [English Version](https://github.com/yourusername/GitHubSentinel/blob/main/README.md)
+
 - **通知用户**：通过配置的通知方法，通知用户最新的发布信息。  
-  **Notify Users**: Notify users of the latest release information through configured notification methods.
-  
+  **Notify Users**: Notify users of the latest release information through configured notification methods.  
+  [English Version](https://github.com/yourusername/GitHubSentinel/blob/main/README.md)
+
 - **交互式命令行工具**：提供简单易用的命令行界面，方便用户管理订阅。  
-  **Interactive Command Line Tool**: Provides an easy-to-use command line interface for users to manage subscriptions.
-  
+  **Interactive Command Line Tool**: Provides an easy-to-use command line interface for users to manage subscriptions.  
+  [English Version](https://github.com/yourusername/GitHubSentinel/blob/main/README.md)
+
 - **每日进展导出**：导出订阅项目的 issues 和 pull requests 列表到 Markdown 文件。  
-  **Daily Progress Export**: Export the list of issues and pull requests for subscribed projects to a Markdown file.
-  
+  **Daily Progress Export**: Export the list of issues and pull requests for subscribed projects to a Markdown file.  
+  [English Version](https://github.com/yourusername/GitHubSentinel/blob/main/README.md)
+
 - **生成正式报告**：调用 GPT-4 API 生成项目每日报告。  
-  **Generate Formal Reports**: Call the GPT-4 API to generate daily reports for the project.
+  **Generate Formal Reports**: Call the GPT-4 API to generate daily reports for the project.  
+  [English Version](https://github.com/yourusername/GitHubSentinel/blob/main/README.md)
 
 
 ## 安装 / Installation
