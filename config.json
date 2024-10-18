@@ -1,3 +1,4 @@
 {
-    "NOTIFICATION_METHOD": "console"
+    "NOTIFICATION_METHOD": "console",
+    "PULL_INTERVAL": 3600  // 以秒为单位
 }

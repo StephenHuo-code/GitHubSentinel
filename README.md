@@ -22,7 +22,7 @@ GitHub Sentinel 是一个用于监控 GitHub 仓库更新的工具。它可以�
 - **交互式命令行工具**：提供简单易用的命令行界面，方便用户管理订阅。  
   **Interactive Command Line Tool**: Provides an easy-to-use command line interface for users to manage subscriptions.  
 
-- **每日进展导出**：导出订阅项目的 issues 和 pull requests 列表到 Markdown 文件。  
+- **每日进展导出**：导出订阅项���的 issues 和 pull requests 列表到 Markdown 文件。  
   **Daily Progress Export**: Export the list of issues and pull requests for subscribed projects to a Markdown file.  
   
 
@@ -63,3 +63,7 @@ Before running the tool, make sure to set the environment variables `GITHUB_API_
   ```
 
 - **其他方法**：根据您的需求选择其他运行方式。
+
+## 守护进程 / Daemon Mode
+
+守护进程将根据配置文件 `config.json` 中的设置，定期拉取订阅的 GitHub 仓库更新。

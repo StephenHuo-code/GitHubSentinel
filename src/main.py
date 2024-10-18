@@ -30,7 +30,7 @@ def main():
     subscription_manager = SubscriptionManager()
     notifier = Notifier(config.notification_method)
     llm = LLM(config.openai_api_key)
-    reporter = Reporter(llm)
+    reporter = Reporter(llm,github_agent)
     
     updater = Updater(github_agent, subscription_manager)
     sentinel_service = GitHubSentinelService(updater, notifier, reporter, github_agent, subscription_manager)
