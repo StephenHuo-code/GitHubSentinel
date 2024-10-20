@@ -37,3 +37,164 @@
 2024-10-18 10:33:05,874 - INFO - LLM initialized
 2024-10-18 10:39:05,904 - INFO - LLM initialized
 2024-10-18 10:42:20,528 - INFO - LLM initialized
+2024-10-19 19:02:01,800 - INFO - LLM initialized
+2024-10-19 19:06:08,858 - INFO - LLM initialized
+2024-10-19 19:09:57,109 - INFO - LLM initialized
+2024-10-19 19:24:22,098 - INFO - LLM initialized
+2024-10-19 19:24:33,041 - INFO - Generating report for provided markdown content.
+2024-10-19 19:28:27,899 - INFO - LLM initialized
+2024-10-19 19:28:44,471 - INFO - Generating report for provided markdown content.
+2024-10-19 19:52:10,353 - INFO - LLM initialized
+2024-10-19 19:52:32,721 - INFO - Starting report generation using GPT model.
+2024-10-19 19:52:36,518 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-19 19:54:33,018 - INFO - Starting report generation using GPT model.
+2024-10-19 19:54:37,962 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-19 19:55:22,290 - INFO - Starting report generation using GPT model.
+2024-10-19 19:55:29,467 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-19 20:00:57,543 - INFO - Starting report generation using GPT model.
+2024-10-19 20:01:03,591 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-19 20:19:11,366 - INFO - LLM initialized
+2024-10-19 20:20:36,533 - INFO - LLM initialized
+2024-10-19 20:20:50,041 - INFO - Starting report generation using GPT model.
+2024-10-19 20:20:55,897 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-19 20:25:17,186 - INFO - LLM initialized
+2024-10-19 20:25:35,202 - INFO - Starting report generation using GPT model.
+2024-10-19 20:25:40,126 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-19 20:27:37,350 - INFO - LLM initialized
+2024-10-19 20:28:26,880 - INFO - LLM initialized
+2024-10-19 20:29:13,807 - INFO - LLM initialized
+2024-10-19 20:33:43,925 - INFO - LLM initialized
+2024-10-19 20:34:01,140 - INFO - LLM initialized
+2024-10-19 20:34:33,278 - INFO - LLM initialized
+2024-10-19 20:34:50,918 - INFO - LLM initialized
+2024-10-20 06:01:33,014 - INFO - LLM initialized
+2024-10-20 06:10:32,177 - INFO - LLM initialized
+2024-10-20 06:18:33,404 - INFO - LLM initialized
+2024-10-20 06:19:13,559 - INFO - LLM initialized
+2024-10-20 06:19:50,523 - INFO - Starting report generation using GPT model.
+2024-10-20 06:19:55,431 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 06:20:25,915 - INFO - Starting report generation using GPT model.
+2024-10-20 06:20:30,041 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 06:27:24,743 - INFO - LLM initialized
+2024-10-20 06:29:32,190 - INFO - LLM initialized
+2024-10-20 06:32:18,243 - INFO - LLM initialized
+2024-10-20 06:34:34,024 - INFO - LLM initialized
+2024-10-20 06:36:55,865 - INFO - LLM initialized
+2024-10-20 06:41:19,694 - INFO - LLM initialized
+2024-10-20 06:42:17,288 - INFO - Starting report generation using GPT model.
+2024-10-20 06:42:22,607 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 06:43:31,925 - INFO - Starting report generation using GPT model.
+2024-10-20 06:43:36,554 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 07:13:03,218 - INFO - LLM initialized
+2024-10-20 07:14:56,866 - INFO - LLM initialized
+2024-10-20 07:18:07,008 - INFO - LLM initialized
+2024-10-20 07:18:27,182 - INFO - Starting report generation using GPT model.
+2024-10-20 07:18:30,297 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 07:20:17,447 - INFO - Starting report generation using GPT model.
+2024-10-20 07:20:21,033 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 07:26:16,919 - INFO - Starting report generation using GPT model.
+2024-10-20 07:26:20,114 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 08:22:02,242 - INFO - LLM initialized
+2024-10-20 08:22:18,172 - INFO - Starting report generation using GPT model.
+2024-10-20 08:22:22,207 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 08:28:22,740 - INFO - LLM initialized
+2024-10-20 08:28:35,846 - INFO - Starting report generation using GPT model.
+2024-10-20 08:28:44,055 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 08:38:42,712 - INFO - LLM initialized
+2024-10-20 08:51:50,754 - INFO - LLM initialized
+2024-10-20 08:54:19,283 - INFO - LLM initialized
+2024-10-20 08:54:57,840 - INFO - Starting report generation using GPT model.
+2024-10-20 08:55:02,243 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 08:55:42,687 - INFO - Starting report generation using GPT model.
+2024-10-20 08:55:47,187 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 08:57:22,854 - INFO - Starting report generation using GPT model.
+2024-10-20 08:57:29,128 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 08:58:07,999 - INFO - Starting report generation using GPT model.
+2024-10-20 08:58:15,474 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 08:59:21,135 - INFO - Starting report generation using GPT model.
+2024-10-20 08:59:28,590 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:00:30,138 - INFO - Starting report generation using GPT model.
+2024-10-20 09:00:37,215 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:00:55,537 - INFO - Starting report generation using GPT model.
+2024-10-20 09:01:02,387 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:03:36,200 - INFO - Starting report generation using GPT model.
+2024-10-20 09:03:42,326 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:03:52,162 - INFO - Starting report generation using GPT model.
+2024-10-20 09:03:55,959 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:05:44,551 - INFO - Starting report generation using GPT model.
+2024-10-20 09:05:50,751 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:06:49,909 - INFO - Starting report generation using GPT model.
+2024-10-20 09:06:55,364 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:08:48,650 - INFO - LLM initialized
+2024-10-20 09:10:32,493 - INFO - LLM initialized
+2024-10-20 09:10:43,916 - INFO - Starting report generation using GPT model.
+2024-10-20 09:10:48,633 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:11:22,925 - INFO - Starting report generation using GPT model.
+2024-10-20 09:11:28,873 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:12:51,913 - INFO - Starting report generation using GPT model.
+2024-10-20 09:12:57,080 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:38:00,273 - INFO - LLM initialized
+2024-10-20 09:39:45,507 - INFO - LLM initialized
+2024-10-20 09:39:58,911 - INFO - Starting report generation using GPT model.
+2024-10-20 09:40:05,835 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:40:54,078 - INFO - Starting report generation using GPT model.
+2024-10-20 09:40:59,484 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:41:22,637 - INFO - Starting report generation using GPT model.
+2024-10-20 09:41:27,741 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:43:00,514 - INFO - LLM initialized
+2024-10-20 09:43:12,923 - INFO - Starting report generation using GPT model.
+2024-10-20 09:43:17,238 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:43:59,941 - INFO - Starting report generation using GPT model.
+2024-10-20 09:44:05,571 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:44:23,550 - INFO - Starting report generation using GPT model.
+2024-10-20 09:44:30,230 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:52:54,729 - INFO - Starting report generation using GPT model.
+2024-10-20 09:53:00,927 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 09:53:30,610 - INFO - Starting report generation using GPT model.
+2024-10-20 09:53:36,616 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 10:05:25,753 - INFO - LLM initialized
+2024-10-20 10:05:39,354 - INFO - Starting report generation using GPT model.
+2024-10-20 10:05:45,177 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 10:06:00,318 - INFO - Starting report generation using GPT model.
+2024-10-20 10:06:06,313 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:08:46,758 - INFO - Starting report generation using GPT model.
+2024-10-20 19:08:52,272 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:18:25,658 - INFO - LLM initialized
+2024-10-20 19:18:42,641 - INFO - Starting report generation using GPT model.
+2024-10-20 19:18:47,277 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:18:59,995 - INFO - Starting report generation using GPT model.
+2024-10-20 19:19:05,724 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:19:34,133 - INFO - Starting report generation using GPT model.
+2024-10-20 19:19:39,462 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:20:39,822 - INFO - LLM initialized
+2024-10-20 19:22:34,861 - INFO - LLM initialized
+2024-10-20 19:22:52,844 - INFO - Starting report generation using GPT model.
+2024-10-20 19:22:58,454 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:26:10,821 - INFO - LLM initialized
+2024-10-20 19:26:38,909 - INFO - Starting report generation using GPT model.
+2024-10-20 19:26:45,317 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:30:01,176 - INFO - LLM initialized
+2024-10-20 19:32:38,636 - INFO - LLM initialized
+2024-10-20 19:33:06,853 - INFO - Starting report generation using GPT model.
+2024-10-20 19:33:12,212 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:34:19,164 - INFO - Starting report generation using GPT model.
+2024-10-20 19:34:26,227 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:34:28,650 - INFO - Starting report generation using GPT model.
+2024-10-20 19:34:32,872 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:39:28,674 - INFO - LLM initialized
+2024-10-20 19:41:46,990 - INFO - LLM initialized
+2024-10-20 19:42:04,700 - INFO - Starting report generation using GPT model.
+2024-10-20 19:42:09,588 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:45:49,629 - INFO - Starting report generation using GPT model.
+2024-10-20 19:45:54,396 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:45:57,114 - INFO - Starting report generation using GPT model.
+2024-10-20 19:46:01,999 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:47:50,020 - INFO - Starting report generation using GPT model.
+2024-10-20 19:47:55,382 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:47:58,254 - INFO - Starting report generation using GPT model.
+2024-10-20 19:48:02,457 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:48:04,430 - INFO - Starting report generation using GPT model.
+2024-10-20 19:48:07,931 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-20 19:50:17,219 - INFO - LLM initialized
+2024-10-20 19:50:42,737 - INFO - Starting report generation using GPT model.
+2024-10-20 19:50:47,179 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

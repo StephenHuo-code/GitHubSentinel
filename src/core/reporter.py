@@ -23,31 +23,61 @@ class Reporter:
         return report
     
 
-    def export_daily_progress(self, repo_name):
+    def generate_report(self, repo_name, start_date=None, end_date=None):
+        """
+        导出指定仓库的进展信息并生成报告。
+        该函数使用 LLM(大型语言模型)生成报告。
+        如果提供了日期范围，则导出该范围内的进展信息。
+        否则，导出每日进展信息。
+        """
         if not repo_name:
             print("The repository name is empty.")
             return
-        issues = self.github_agent.get_issues(repo_name)
-        print(issues)
-        pull_requests = self.github_agent.get_pull_requests(repo_name)
-        date_str = datetime.datetime.now().strftime("%Y-%m-%d")
-        filename = f"{repo_name.replace('/', '_')}_{date_str}.md"
+        if start_date and end_date:
+            # Fetch issues, commits, and pull requests within the date range
+            issues = self.github_agent.get_issues(repo_name, start_date, end_date)
+            commits = self.github_agent.get_commits(repo_name, start_date, end_date)
+            pull_requests = self.github_agent.get_pull_requests(repo_name, start_date, end_date)
+            filename = f"{repo_name.replace('/', '_')}_{start_date}_to_{end_date}.md"
+            title = f"Progress for {repo_name} from {start_date} to {end_date}"
+        elif start_date and not end_date:  # New condition added
+            end_date = datetime.datetime.now().strftime("%Y-%m-%d")  # Set end_date to today
+            # Fetch issues, commits, and pull requests within the date range
+            issues = self.github_agent.get_issues(repo_name, start_date, end_date)
+            commits = self.github_agent.get_commits(repo_name, start_date, end_date)
+            pull_requests = self.github_agent.get_pull_requests(repo_name, start_date, end_date)
+            filename = f"{repo_name.replace('/', '_')}_{start_date}_to_{end_date}.md"
+            title = f"Progress for {repo_name} from {start_date} to {end_date}"
+        else:
+            # Fetch issues, pull requests, and commits
+            issues = self.github_agent.get_issues(repo_name)
+            pull_requests = self.github_agent.get_pull_requests(repo_name)
+            commits = self.github_agent.get_commits(repo_name)  # Fetch commits
+            date_str = datetime.datetime.now().strftime("%Y-%m-%d")
+            filename = f"{repo_name.replace('/', '_')}_{date_str}.md"
+            title = f"Daily Progress for {repo_name} on {date_str}"
+        
         with open(filename, 'w') as file:
-            file.write(f"# Daily Progress for {repo_name} on {date_str}\n\n")
+            file.write(f"# {title}\n\n")
             file.write("## Issues\n")
             for issue in issues:
                 file.write(f"- {issue['title']} (#{issue['number']})\n")
             file.write("\n## Pull Requests\n")
             for pr in pull_requests:
                 file.write(f"- {pr['title']} (#{pr['number']})\n")
-        return filename
-
-    def generate_daily_report(self, repo_name):
-        if not repo_name:
-            print("The repository name is empty.")
-            return
-        markdown_file = self.export_daily_progress(repo_name)
-        # Assuming generate_daily_report logic is implemented here
-        # This is a placeholder for the actual report generation logic
-        report_filename = f"report_{markdown_file}"
+            file.write("\n## Commits\n")  # Add section for commits
+            for commit in commits:  # Write commit messages
+                file.write(f"- {commit['commit']['message']} (by {commit['commit']['author']['name']})\n")
+        
+        # Generate the report using LLM
+        with open(filename, 'r') as file:
+            markdown_content = file.read()
+        
+        report = self.llm.generate_report(markdown_content)
+        
+        # Save the generated report to a new file
+        report_filename = f"report_{filename}"
+        with open(report_filename, 'w') as file:
+            file.write(report)
+        
         return report_filename
